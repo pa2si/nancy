@@ -1,9 +1,37 @@
+'use client';
+
+import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useScrollContext } from '@/lib/ScrollContext';
 
-const Hero = () => {
+const Hero: React.FC = () => {
+  const { setHeroVisibility } = useScrollContext();
+  const heroRef = useRef<HTMLDivElement | null>(null); // Specify the type for useRef for better type checking
+
+  useEffect(() => {
+    // Capture the current value of heroRef in a variable inside the effect
+    const current = heroRef.current;
+
+    if (current) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setHeroVisibility(entry.isIntersecting);
+        },
+        { threshold: 0.1 }
+      );
+
+      observer.observe(current);
+
+      // Use the captured value in the cleanup function
+      return () => observer.unobserve(current);
+    }
+  }, [setHeroVisibility]); // useEffect dependency array
   return (
-    <section className="flex min-h-screen flex-col items-center justify-between py-8 background">
+    <section
+      className="flex min-h-screen flex-col items-center justify-between py-8 background"
+      id="hero"
+    >
       <div className="flex flex-col items-center">
         <h1 className=" font-medium text-4xl sm:text-5xl font-title">
           Si hay para vender!
@@ -13,7 +41,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
         </div>
         {/* contact */}
-        <div className="flex items-center mt-1">
+        <div className="flex items-center mt-1" ref={heroRef}>
           <Image
             src="/icons8-whatsapp.svg"
             alt="logo"

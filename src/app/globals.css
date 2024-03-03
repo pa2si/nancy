@@ -47,3 +47,24 @@ h4 {
     )
     rgb(var(--background-start-rgb));
 }
+
+@media (max-width: 767px) {
+  .hideDekstop {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hideDekstop {
+    display: none !important;
+  }
+}
+
+.positionBottom {
+  position: fixed !important;
+  bottom: 3rem !important;
+  left: 50% !important; /* Center the element horizontally */
+  transform: translateX(
+    -50%
+  ) !important; /* Shift it back by half of its width */
+}

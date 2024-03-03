@@ -49,7 +49,7 @@ export default function ItemDetailPage({ params }: ItemDetailPageProps) {
             </div>
           </div>
           <div>
-            <div className="flex items-center px-3 mt-1 md:px-10">
+            <div className="flex items-center px-3 mb-2 md:px-10">
               {' '}
               {/* Contact information */}
               <Image
@@ -68,7 +68,7 @@ export default function ItemDetailPage({ params }: ItemDetailPageProps) {
       {/* Back Button */}
       <div className="flex flex-row items-center">
         <Link href="/">
-          <div className="flex items-center bg-blue-500 hover:bg-blue-700 text-white justify-center font-bold py-2 px-4 rounded transition-all duration-200 ease-in-out">
+          <div className="flex items-center bg-cyan-500 hover:bg-cyan-400 text-white justify-center font-bold py-2 px-4 ml-2 rounded transition-all duration-200 ease-in-out">
             <FaArrowLeft />
             <p className="ml-2">atrás</p>
           </div>

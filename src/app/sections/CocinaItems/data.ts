@@ -13,7 +13,7 @@ export const cocinaItemsList: CocinaItems[] = [
   {
     id: '1',
     imageUrl:
-      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709253453/nancy/1_eqqsiv.jpg',
+      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709446879/nancy/1_ount90.png',
     title: 'tasa',
     alt: 'tasa',
     estado: 'usado',
@@ -25,7 +25,7 @@ export const cocinaItemsList: CocinaItems[] = [
   {
     id: '2',
     imageUrl:
-      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709253456/nancy/4_qbrmzt.jpg',
+      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709446886/nancy/2_c2kf7f.png',
     title: 'vasos',
     alt: 'vasos',
     estado: 'nuevo',
@@ -36,7 +36,7 @@ export const cocinaItemsList: CocinaItems[] = [
   {
     id: '3',
     imageUrl:
-      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709253455/nancy/2_mik7tg.jpg',
+      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709446893/nancy/3_nvxm6i.png',
     title: 'vase',
     alt: 'vase',
     estado: 'usado',
@@ -47,7 +47,7 @@ export const cocinaItemsList: CocinaItems[] = [
   {
     id: '4',
     imageUrl:
-      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709253455/nancy/3_hk70fp.jpg',
+      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709446900/nancy/4_zmfvpz.png',
     title: 'botella',
     alt: 'botella',
     estado: 'usado',

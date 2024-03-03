@@ -5,11 +5,11 @@ const BellezaItems = () => {
   return (
     <section
       id="belleza"
-      className="scroll-mt-24 pt-6 background shadow-xl rounded-lg "
+      className="scroll-mt-24 pt-6 background shadow-xl rounded-lg mt-8"
     >
       {/* CocinaItem */}
       <div className="flex flex-col items-center ">
-        <h2 className=" font-medium text-4xl sm:text-5xl font-title">
+        <h2 className=" font-medium text-4xl sm:text-5xl font-title ">
           Productos Belleza
         </h2>
         {/* underline */}

@@ -11,9 +11,9 @@ const BellezaItem: React.FC<BellezaItemProps> = ({ bellezaItem }) => {
 
   return (
     <Link href={singleItemUrl}>
-      <li className="grid grid-cols-2 lg:grid-cols-4 border border-gray-300 shadow-sm hover:bg-gray-50 transition-all duration-100 ease-in-out">
+      <li className="grid grid-cols-2 border border-gray-300 shadow-sm hover:bg-gray-50 transition-all duration-100 ease-in-out">
         {/* image */}
-        <div className="relative h-[150px] w-3/4 lg:col-start-2 lg:col-end-3 my-auto">
+        <div className="relative h-[150px] w-3/4 my-auto">
           <Image
             src={bellezaItem.imageUrl}
             alt={bellezaItem.alt}
