@@ -74,17 +74,18 @@ const MenuMobile: React.FC = () => {
           <SheetFooter>
             <SheetClose asChild>
               <Button className="bg-cyan-400 mt-2">
-                <Link href="#belleza">Belleza</Link>
+                <Link href="#hogar">Hogar</Link>
               </Button>
             </SheetClose>
           </SheetFooter>
           <SheetFooter>
             <SheetClose asChild>
               <Button className="bg-cyan-400 mt-2">
-                <Link href="#decoracion">Decoracion</Link>
+                <Link href="#belleza">Belleza</Link>
               </Button>
             </SheetClose>
           </SheetFooter>
+
           <SheetFooter>
             <SheetClose asChild>
               <Button className="bg-cyan-400 mt-2">

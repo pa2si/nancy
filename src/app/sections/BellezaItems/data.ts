@@ -4,7 +4,7 @@ export interface BellezaItems {
   title: string;
   alt: string;
   estado: string;
-  price: number;
+  price: string;
   descriptionShort: string;
   descriptionLong: string;
 }
@@ -17,7 +17,7 @@ export const bellezaItemsList: BellezaItems[] = [
     title: 'tasa',
     alt: 'tasa',
     estado: 'usado',
-    price: 12,
+    price: '',
     descriptionShort: 'viene con 6 tasas de colores',
     descriptionLong:
       'viene con 6 tasas de colores bonitos. Esta en perfecto estado',
@@ -29,7 +29,7 @@ export const bellezaItemsList: BellezaItems[] = [
     title: 'vasos',
     alt: 'vasos',
     estado: 'nuevo',
-    price: 180,
+    price: '180',
     descriptionShort: '6 vasos',
     descriptionLong: '',
   },
@@ -40,7 +40,7 @@ export const bellezaItemsList: BellezaItems[] = [
     title: 'vase',
     alt: 'vase',
     estado: 'usado',
-    price: 120,
+    price: '120',
     descriptionShort: '6 vasos',
     descriptionLong: '',
   },
@@ -51,7 +51,7 @@ export const bellezaItemsList: BellezaItems[] = [
     title: 'botella',
     alt: 'botella',
     estado: 'usado',
-    price: 10,
+    price: '10',
     descriptionShort: '6 vasos',
     descriptionLong: '',
   },

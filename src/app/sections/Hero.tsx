@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
             width={50}
             height={50}
           ></Image>{' '}
-          <a href="tel:+13183903665" className="text-xl">
+          <a href="tel:3183903665" className="text-xl">
             318 390 3665
           </a>
         </div>
@@ -83,6 +83,21 @@ const Hero: React.FC = () => {
           </Link>
 
           <Link
+            href="/#hogar"
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          >
+            <h2 className={`mb-3 text-2xl font-semibold`}>
+              Hogar
+              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                -&gt;
+              </span>
+            </h2>
+            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+              Todo lo que tiene que haber con decoracion de casa!
+            </p>
+          </Link>
+
+          <Link
             href="/#belleza"
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           >
@@ -98,26 +113,11 @@ const Hero: React.FC = () => {
           </Link>
 
           <Link
-            href="/#deoracion"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          >
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-              Decoracion
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              Todo lo que tiene que haber con decoracion de casa!
-            </p>
-          </Link>
-
-          <Link
             href="/#technica"
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
-              Technica
+              Electronica
               <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                 -&gt;
               </span>

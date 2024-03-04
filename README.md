@@ -1,7 +1,13 @@
-v 0.1.1
+v 0.1.2
+
+What's new:
+
+- more styling
+- slug now with possibilty of two images
 
 done:
 
-- hero
-- Items Sectoin for Cocina and Belleza
+- Hero
+- Items Section for Cocina and Belleza
 - Menus for Desktop and Mobile
+-

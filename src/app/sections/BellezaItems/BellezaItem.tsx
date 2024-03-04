@@ -1,19 +1,19 @@
 import Image from 'next/image';
-import { BellezaItems } from './data';
+import { Item } from '@/lib/interfaces';
 import Link from 'next/link';
 
 interface BellezaItemProps {
-  bellezaItem: BellezaItems;
+  bellezaItem: Item;
 }
 
 const BellezaItem: React.FC<BellezaItemProps> = ({ bellezaItem }) => {
-  const singleItemUrl = `/${bellezaItem.id}`;
+  const singleItemUrl = `/item/${bellezaItem.category}/${bellezaItem.id}`;
 
   return (
     <Link href={singleItemUrl}>
       <li className="grid grid-cols-2 border border-gray-300 shadow-sm hover:bg-gray-50 transition-all duration-100 ease-in-out">
         {/* image */}
-        <div className="relative h-[150px] w-3/4 my-auto">
+        <div className="relative h-[150px] w-3/4 my-auto ">
           <Image
             src={bellezaItem.imageUrl}
             alt={bellezaItem.alt}
@@ -27,7 +27,7 @@ const BellezaItem: React.FC<BellezaItemProps> = ({ bellezaItem }) => {
           <div className="p-4">
             <h3 className="-mb-1">{bellezaItem.title}</h3>
             <p className="italic text-gray-600">{bellezaItem.estado}</p>
-            <h4>${bellezaItem.price}</h4>{' '}
+            {bellezaItem.price && <h4>${bellezaItem.price}</h4>}
             {/* Note: Ensure the price is displayed correctly */}
             <p className="text-gray-900">{bellezaItem.descriptionShort}</p>
           </div>
