@@ -1,8 +1,8 @@
-v 0.1.4
+v 0.1.5
 
 What's new:
 
-- Hero section is now min-h-svh
+- Mobile Menu Buttons better clickable
 
 done:
 

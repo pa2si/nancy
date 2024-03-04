@@ -66,31 +66,31 @@ const MenuMobile: React.FC = () => {
 
           <SheetFooter>
             <SheetClose asChild>
-              <Button className="bg-cyan-400 mt-2">
-                <Link href="#cocina">Cocina</Link>
-              </Button>
+              <Link href="#cocina" className="flex w-full">
+                <Button className="bg-cyan-400 mt-2 grow">Cocina</Button>
+              </Link>
             </SheetClose>
           </SheetFooter>
           <SheetFooter>
             <SheetClose asChild>
-              <Button className="bg-cyan-400 mt-2">
-                <Link href="#hogar">Hogar</Link>
-              </Button>
+              <Link href="#hogar" className="flex w-full">
+                <Button className="bg-cyan-400 mt-2 grow">Hogar</Button>
+              </Link>
             </SheetClose>
           </SheetFooter>
           <SheetFooter>
             <SheetClose asChild>
-              <Button className="bg-cyan-400 mt-2">
-                <Link href="#belleza">Belleza</Link>
-              </Button>
+              <Link href="#belleza" className="flex w-full">
+                <Button className="bg-cyan-400 mt-2 grow">Belleza</Button>
+              </Link>
             </SheetClose>
           </SheetFooter>
 
           <SheetFooter>
             <SheetClose asChild>
-              <Button className="bg-cyan-400 mt-2">
-                <Link href="#technica">Technica</Link>
-              </Button>
+              <Link href="#technica" className="flex w-full">
+                <Button className="bg-cyan-400 mt-2 grow">Technica</Button>
+              </Link>
             </SheetClose>
           </SheetFooter>
         </SheetContent>
