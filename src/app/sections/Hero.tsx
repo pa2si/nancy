@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
   }, [setHeroVisibility]); // useEffect dependency array
   return (
     <section
-      className="flex min-h-dvh flex-col items-center justify-between background py-8"
+      className="flex min-h-svh flex-col items-center justify-between background py-8"
       id="hero"
     >
       <div className="flex flex-col items-center">

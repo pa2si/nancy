@@ -1,8 +1,8 @@
-v 0.1.3
+v 0.1.4
 
 What's new:
 
-- Hero section is now min-h-dvh
+- Hero section is now min-h-svh
 
 done:
 
