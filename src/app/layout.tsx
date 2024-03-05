@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { firaSans } from './fonts';
 import './globals.css';
+import { AppProvider } from '@/utils/context';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,9 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${inter.className} ${firaSans.variable}`}>
-        {children}
-      </body>
+      <AppProvider>
+        <body className={`${inter.className} ${firaSans.variable}`}>
+          {children}
+        </body>
+      </AppProvider>
     </html>
   );
 }

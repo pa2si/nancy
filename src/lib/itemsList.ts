@@ -5,13 +5,13 @@ export const cocinaItemsList = [
     imageUrl:
       'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709520247/nancy/IMG_0699_x3cty2.png',
     imageUrl2: '',
-    title: 'Calderos Imusa',
+    title: '2 Calderos',
     alt: 'Calderos Imusa',
     estado: 'nuevo',
     price: '',
-    descriptionShort: '2 calderos nuevas de ésika ',
+    descriptionShort: '2 calderos nuevos de Imusa ',
     descriptionLong:
-      '2 calderos nuevas de ésika. La pequeña es de 20cm / 2L. Viene en empaque original.',
+      '2 calderos nuevas de Imusa. La pequeña es de 20cm / 2L. Viene en empaque original.',
   },
   // {
   //   id: '1-2',

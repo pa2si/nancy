@@ -17,7 +17,7 @@ const CocinaItem: React.FC<CocinaItemProps> = ({ cocinaItem }) => {
           <Image
             src={cocinaItem.imageUrl}
             alt={cocinaItem.alt}
-            sizes="50vw"
+            sizes="20vw"
             fill
             className="absolute object-contain p-2"
           />

@@ -1,14 +1,13 @@
-v 0.1.6
+v 0.1.7
 
 What's new:
 
-- now Logos per ItemSection
-- new Logo for Hero
+- Modal for dynamic route full screen Image by click on it
+- color gradient adjustment
 
 done:
 
 - Hero
-- Items Section for Cocina and Belleza
+- Items Section for Cocina, Belleza, Hogar and Technologia
 - Menus for Desktop and Mobile
-- more styling
-- slug now with possibilty of two images
+- Slug now with possibilty of two images

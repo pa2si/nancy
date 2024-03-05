@@ -19,7 +19,7 @@ const TechnologiaItem: React.FC<TechnologiaItemProps> = ({
           <Image
             src={technologiaItem.imageUrl}
             alt={technologiaItem.alt}
-            sizes="50vw"
+            sizes="20vw"
             fill
             className="absolute object-contain p-2"
           />

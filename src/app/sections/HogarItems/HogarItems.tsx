@@ -6,7 +6,7 @@ const HogarItems = () => {
   return (
     <section
       id="hogar"
-      className="scroll-mt-24 pt-6 background shadow-xl rounded-lg mt-4 md:mr-4"
+      className="scroll-mt-24 pt-6 background shadow-xl rounded-lg mt-5 md:mr-4"
     >
       {/* HogarItems */}
       <div className="flex flex-col items-center">
@@ -18,7 +18,7 @@ const HogarItems = () => {
           <Image
             src="/undraw_cabin_hkfr.svg"
             alt="kitchen illustration"
-            sizes="40vw"
+            sizes="20vw"
             fill
             className="absolute object-contain"
           />

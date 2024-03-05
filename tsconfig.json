@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/item/[category]/[id]/loading.js"
+    "src/app/item/[category]/[id]/loading.js",
+    "src/tailwind.config.ts_copy"
   ],
   "exclude": ["node_modules"]
 }

@@ -6,7 +6,7 @@ const CocinaItems = () => {
   return (
     <section
       id="cocina"
-      className="scroll-mt-24 pt-6 background shadow-xl rounded-lg mt-4 md:mr-4"
+      className="scroll-mt-24 pt-6 background shadow-xl rounded-lg mt-5 md:mr-4"
     >
       {/* CocinaItem */}
       <div className="flex flex-col items-center">

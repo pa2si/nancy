@@ -13,6 +13,8 @@ import { FaArrowLeft } from 'react-icons/fa';
 import { Item, Category } from '@/lib/interfaces';
 import { ParsedUrlQuery } from 'querystring';
 import { Button } from '@/components/ui/button';
+import { useGlobalContext } from '@/utils/context';
+import ImageModal from './ImageModal';
 
 interface Params extends ParsedUrlQuery {
   id: string;
@@ -33,6 +35,7 @@ interface ItemDetailPageProps {
 
 export default function ItemDetailPage({ params }: ItemDetailPageProps) {
   const { category, id } = params;
+  const { openImageModal } = useGlobalContext();
 
   let itemsList: Item[]; // Assuming your items have a common type Item[]
   switch (category) {
@@ -70,6 +73,10 @@ export default function ItemDetailPage({ params }: ItemDetailPageProps) {
     setCurrentImage(imageUrl);
   };
 
+  const handleImageClick = (imageUrl: string) => {
+    openImageModal(imageUrl);
+  };
+
   const descriptionToShow =
     item.descriptionLong !== '' ? item.descriptionLong : item.descriptionShort;
 
@@ -79,7 +86,10 @@ export default function ItemDetailPage({ params }: ItemDetailPageProps) {
         <div className="shadow-xl flex-grow rounded-lg overflow-hidden flex flex-col justify-between">
           <div className="flex flex-col">
             {/* Image */}
-            <div className="relative w-full h-56 mt-8">
+            <div
+              className="relative w-full h-56 mt-8 cursor-pointer"
+              onClick={() => handleImageClick(currentImage)}
+            >
               <Image
                 src={currentImage}
                 alt={item.alt}
@@ -142,6 +152,7 @@ export default function ItemDetailPage({ params }: ItemDetailPageProps) {
           </div>
         </Link>
       </div>
+      <ImageModal />
     </div>
   );
 }
