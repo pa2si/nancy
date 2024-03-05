@@ -2,7 +2,12 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { cocinaItemsList, bellezaItemsList } from '@/lib/itemsList'; // Adjust the import path as needed
+import {
+  cocinaItemsList,
+  bellezaItemsList,
+  hogarItemsList,
+  technologiaItemsList,
+} from '@/lib/itemsList'; // Adjust the import path as needed
 import Image from 'next/image';
 import { FaArrowLeft } from 'react-icons/fa';
 import { Item, Category } from '@/lib/interfaces';
@@ -29,7 +34,25 @@ interface ItemDetailPageProps {
 export default function ItemDetailPage({ params }: ItemDetailPageProps) {
   const { category, id } = params;
 
-  const itemsList = category === 'cocina' ? cocinaItemsList : bellezaItemsList;
+  let itemsList: Item[]; // Assuming your items have a common type Item[]
+  switch (category) {
+    case 'cocina':
+      itemsList = cocinaItemsList;
+      break;
+    case 'belleza':
+      itemsList = bellezaItemsList;
+      break;
+    case 'hogar':
+      itemsList = hogarItemsList;
+      break;
+    case 'technologia':
+      itemsList = technologiaItemsList;
+      break;
+    default:
+      // Handle the case where the category doesn't match any of the known categories
+      console.error('Error: Category not found for category:', category);
+      itemsList = []; // Assigning an empty array as a fallback
+  }
   const item = itemsList.find((item: Item) => item.id === id);
   const [currentImage, setCurrentImage] = useState(item?.imageUrl || '');
 
@@ -51,7 +74,7 @@ export default function ItemDetailPage({ params }: ItemDetailPageProps) {
     item.descriptionLong !== '' ? item.descriptionLong : item.descriptionShort;
 
   return (
-    <div className="max-w-sm md:max-w-4xl  mx-auto h-screen grid grid-row pt-8 ">
+    <div className="max-w-sm md:max-w-4xl  mx-auto h-svh grid grid-row pt-8 ">
       <article className="flex flex-col bg-gray-50 rounded-md ">
         <div className="shadow-xl flex-grow rounded-lg overflow-hidden flex flex-col justify-between">
           <div className="flex flex-col">

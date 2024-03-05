@@ -1,22 +1,22 @@
-import CocinaItem from './CocinaItem';
-import { cocinaItemsList } from '@/lib/itemsList';
+import HogarItem from './HogarItem';
+import { hogarItemsList } from '@/lib/itemsList';
 import Image from 'next/image';
 
-const CocinaItems = () => {
+const HogarItems = () => {
   return (
     <section
-      id="cocina"
+      id="hogar"
       className="scroll-mt-24 pt-6 background shadow-xl rounded-lg mt-4 md:mr-4"
     >
-      {/* CocinaItem */}
+      {/* HogarItems */}
       <div className="flex flex-col items-center">
         <h2 className=" font-medium text-4xl sm:text-5xl font-title">
-          Productos de Cocina
+          Productos de Hogar
         </h2>
         {/* kitchen image */}
-        <div className="relative h-[130px] md:h-[160px] w-[220px]">
+        <div className="relative h-[160px] w-[125px] md:h-[175px] md:w-[220px]">
           <Image
-            src="/chef-isometric.svg"
+            src="/undraw_cabin_hkfr.svg"
             alt="kitchen illustration"
             sizes="40vw"
             fill
@@ -28,20 +28,20 @@ const CocinaItems = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
         </div>
       </div>
-      {cocinaItemsList.length > 0 ? (
+      {hogarItemsList.length > 0 ? (
         <ul>
-          {cocinaItemsList.map((item) => (
-            <CocinaItem key={item.id} cocinaItem={item} />
+          {hogarItemsList.map((item) => (
+            <HogarItem key={item.id} hogarItem={item} />
           ))}
         </ul>
       ) : (
         <div className="text-center py-4">
           <p className="px-6 sm:px-0">
-            No hay productos de cocina disponibles en este momento.
+            No hay productos de hogar disponibles en este momento.
           </p>
         </div>
       )}
     </section>
   );
 };
-export default CocinaItems;
+export default HogarItems;

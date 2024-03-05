@@ -88,8 +88,8 @@ const MenuMobile: React.FC = () => {
 
           <SheetFooter>
             <SheetClose asChild>
-              <Link href="#technica" className="flex w-full">
-                <Button className="bg-cyan-400 mt-2 grow">Technica</Button>
+              <Link href="#technologia" className="flex w-full">
+                <Button className="bg-cyan-400 mt-2 grow">Technologia</Button>
               </Link>
             </SheetClose>
           </SheetFooter>

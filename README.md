@@ -1,8 +1,9 @@
-v 0.1.5
+v 0.1.6
 
 What's new:
 
-- Mobile Menu Buttons better clickable
+- now Logos per ItemSection
+- new Logo for Hero
 
 done:
 

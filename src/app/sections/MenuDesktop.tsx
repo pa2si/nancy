@@ -9,18 +9,29 @@ const MenuDesktop = () => {
         <p className="text-xl font-bold text-center">Menu</p>
         <CgMenuRound />
       </div>
-      <Button className="bg-cyan-500 hover:bg-cyan-700">
-        <Link href="#cocina">Cocina</Link>
-      </Button>
-      <Button className="bg-cyan-500 hover:bg-cyan-700">
-        <Link href="#hogar">Hogar</Link>
-      </Button>
-      <Button className="bg-cyan-500 hover:bg-cyan-700">
-        <Link href="#belleza">Belleza</Link>
-      </Button>
-      <Button className="bg-cyan-500 hover:bg-cyan-700">
-        <Link href="#electronica">Electronica</Link>
-      </Button>
+      <div className="flex flex-col gap-2">
+        <Link href="#cocina ">
+          <Button className=" w-full bg-cyan-500 hover:bg-cyan-700">
+            Cocina
+          </Button>
+        </Link>
+
+        <Link href="#hogar">
+          <Button className="w-full bg-cyan-500 hover:bg-cyan-700">
+            Hogar
+          </Button>
+        </Link>
+        <Link href="#belleza">
+          <Button className="w-full bg-cyan-500 hover:bg-cyan-700">
+            Belleza
+          </Button>
+        </Link>
+        <Link href="#technologia">
+          <Button className="w-full bg-cyan-500 hover:bg-cyan-700">
+            Technologia
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 };

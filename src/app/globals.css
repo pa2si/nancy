@@ -35,6 +35,14 @@ body {
 h3 {
   font-size: xx-large;
 }
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: x-large;
+    line-height: 30px;
+  }
+}
+
 h4 {
   font-size: 22px;
 }

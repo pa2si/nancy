@@ -5,6 +5,8 @@ import BellezaItems from './sections/BellezaItems/BellezaItems';
 import MenuMobile from './sections/MenuMobile';
 import MenuDesktop from './sections/MenuDesktop';
 import Footer from './sections/Footer';
+import HogarItems from './sections/HogarItems/HogarItems';
+import TechnologiaItems from './sections/TechnologiaItems/TechnologiaItems';
 
 export default function Home() {
   return (
@@ -17,7 +19,9 @@ export default function Home() {
           </div>
           <div className="col-span-6">
             <CocinaItems />
+            <HogarItems />
             <BellezaItems />
+            <TechnologiaItems />
           </div>
         </div>
         <MenuMobile />

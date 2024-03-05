@@ -1,111 +1,95 @@
 export const cocinaItemsList = [
   {
-    id: '1',
+    id: '1-1',
     category: 'cocina',
     imageUrl:
       'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709520247/nancy/IMG_0699_x3cty2.png',
-    imageUrl2:
-      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709520253/nancy/IMG_0700_gavvws.png',
+    imageUrl2: '',
     title: 'Calderos Imusa',
     alt: 'Calderos Imusa',
     estado: 'nuevo',
     price: '',
-    descriptionShort: '2 calderos nuevas de ésika',
-    descriptionLong: '2 calderos nuevas de ésika. La pequeña es de 20cm / 2L.',
+    descriptionShort: '2 calderos nuevas de ésika ',
+    descriptionLong:
+      '2 calderos nuevas de ésika. La pequeña es de 20cm / 2L. Viene en empaque original.',
   },
+  // {
+  //   id: '1-2',
+  //   category: 'cocina',
+  //   imageUrl:
+  //     'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709575178/nancy/Asunto_r2nxnl.png',
+  //   imageUrl2:
+  //     'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709575524/nancy/Asunto_2_qfugua.png',
+  //   title: 'Caldero',
+  //   alt: 'Foto de Caldero',
+  //   estado: 'nuevo',
+  //   price: '',
+  //   descriptionShort:
+  //     'Marca Universal con tapa de vidrio de 24cm y 4 Cucharones nuevos.',
+  //   descriptionLong:
+  //     'Caldero nuevo marca Universal con tapa de vidrio de 24cm y 4 Cucharones nuevos. Todo viene en empaque original.',
+  // },
   {
-    id: '2',
+    id: '1-3',
     category: 'cocina',
     imageUrl:
-      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709446886/nancy/2_c2kf7f.png',
-    imageUrl2: '',
-    title: 'vasos',
-    alt: 'vasos',
+      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709576444/nancy/Asunto_4_vwcs77.png',
+    imageUrl2:
+      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709576589/nancy/Asunto_3_gczl7x.png',
+    title: 'Licuadora',
+    alt: 'Foto de Licuadora',
     estado: 'nuevo',
-    price: '180',
-    descriptionShort: '6 vasos',
-    descriptionLong: '',
-  },
-  {
-    id: '3',
-    category: 'cocina',
-    imageUrl:
-      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709446893/nancy/3_nvxm6i.png',
-    imageUrl2: '',
-    title: 'vase',
-    alt: 'vase',
-    estado: 'usado',
-    price: '120',
-    descriptionShort: '6 vasos',
-    descriptionLong: '',
-  },
-  {
-    id: '4',
-    category: 'cocina',
-    imageUrl:
-      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709446900/nancy/4_zmfvpz.png',
-    imageUrl2: '',
-    title: 'botella',
-    alt: 'botella',
-    estado: 'usado',
-    price: '10',
-    descriptionShort: '6 vasos',
-    descriptionLong: '',
+    price: '',
+    descriptionShort: 'Licuadora Optimix marca Samurai / 2L.',
+    descriptionLong:
+      'Licuadora Optimix marca Samurai de 2L. Con motor de 370W. Estado nuevo y en empaque original.',
   },
 ];
 
 export const bellezaItemsList = [
   {
-    id: '5',
-    category: 'belleza',
-    imageUrl:
-      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709446879/nancy/1_ount90.png',
+    id: '',
+    category: '',
+    imageUrl: '',
     imageUrl2: '',
-    title: 'tasa',
-    alt: 'tasa',
-    estado: 'usado',
+    title: '',
+    alt: '',
+    estado: '',
     price: '',
-    descriptionShort: 'viene con 8 tasas de colores',
-    descriptionLong:
-      'viene con 8 tasas de colores bonitos. Esta en perfecto estado',
+    descriptionShort: '',
+    descriptionLong: '',
   },
+];
+
+export const hogarItemsList = [
   {
-    id: '6',
-    category: 'belleza',
+    id: '3-1',
+    category: 'hogar',
     imageUrl:
-      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709446886/nancy/2_c2kf7f.png',
+      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709579251/nancy/IMG_0692_eygwuq.jpg',
     imageUrl2: '',
-    title: 'vasos',
-    alt: 'vasos',
+    title: 'Edredon y 2 fundas',
+    alt: 'tasa',
     estado: 'nuevo',
-    price: '180',
-    descriptionShort: '8 vasos',
-    descriptionLong: '',
+    price: '',
+    descriptionShort:
+      'Edredon doble 200 x 200 cm y 2 fundas para almohada 50 x 70 cm.',
+    descriptionLong:
+      'Edredon microfibra doble 200 x 200 cm y 2 fundas para almohada 50 x 70 cmy. 100% poliéster. Viene en empaque nuevo.',
   },
+];
+
+export const technologiaItemsList = [
   {
-    id: '7',
-    category: 'belleza',
-    imageUrl:
-      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709446893/nancy/3_nvxm6i.png',
+    id: '',
+    category: '',
+    imageUrl: '',
     imageUrl2: '',
-    title: 'vase',
-    alt: 'vase',
-    estado: 'usado',
-    price: '120',
-    descriptionShort: '6 vasos',
-    descriptionLong: '',
-  },
-  {
-    id: '8',
-    category: 'belleza',
-    imageUrl:
-      'https://res.cloudinary.com/dkc3ohnkh/image/upload/v1709446900/nancy/4_zmfvpz.png',
-    imageUrl2: '',
-    title: 'botella',
-    alt: 'botella',
-    estado: 'usado',
-    price: '10',
-    descriptionShort: '6 vasos',
+    title: '',
+    alt: '',
+    estado: '',
+    price: '',
+    descriptionShort: '',
     descriptionLong: '',
   },
 ];

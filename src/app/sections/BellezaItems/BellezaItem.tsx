@@ -23,14 +23,12 @@ const BellezaItem: React.FC<BellezaItemProps> = ({ bellezaItem }) => {
           />
         </div>
         {/* description */}
-        <div>
-          <div className="p-4">
-            <h3 className="-mb-1">{bellezaItem.title}</h3>
-            <p className="italic text-gray-600">{bellezaItem.estado}</p>
-            {bellezaItem.price && <h4>${bellezaItem.price}</h4>}
-            {/* Note: Ensure the price is displayed correctly */}
-            <p className="text-gray-900">{bellezaItem.descriptionShort}</p>
-          </div>
+        <div className="p-4">
+          <h3 className="-mb-1">{bellezaItem.title}</h3>
+          <p className="italic text-gray-600">{bellezaItem.estado}</p>
+          {bellezaItem.price && <h4>${bellezaItem.price}</h4>}
+          {/* Note: Ensure the price is displayed correctly */}
+          <p className="text-gray-900 mt-1">{bellezaItem.descriptionShort}</p>
         </div>
       </li>
     </Link>

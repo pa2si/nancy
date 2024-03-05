@@ -29,12 +29,12 @@ const Hero: React.FC = () => {
   }, [setHeroVisibility]); // useEffect dependency array
   return (
     <section
-      className="flex min-h-svh flex-col items-center justify-between background py-8"
+      className="flex h-svh flex-col items-center justify-between background pt-8"
       id="hero"
     >
       <div className="flex flex-col items-center">
         <h1 className=" font-medium text-4xl sm:text-5xl font-title">
-          Si hay para vender!
+          Si hay para comprar!
         </h1>
         {/* underline */}
         <div className="relative w-full h-1 mt-4 ">
@@ -55,9 +55,9 @@ const Hero: React.FC = () => {
       </div>
 
       {/* image */}
-      <div className="relative w-full md:w-3/4 h-[15rem] sm:h-[20rem] md:h-[30rem]">
+      <div className="relative w-full md:w-3/4 h-[18rem] sm:h-[20rem] md:h-[30rem]">
         <Image
-          src="/online-store-flatline.svg"
+          src="/online-shopping-flatline.svg"
           fill
           alt="Image of shop"
           sizes="(max-width: 768px) 80vw, 33vw"

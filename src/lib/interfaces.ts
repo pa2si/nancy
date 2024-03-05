@@ -11,4 +11,4 @@ export interface Item {
   descriptionLong: string;
 }
 
-export type Category = 'cocina' | 'belleza';
+export type Category = 'cocina' | 'belleza' | 'hogar' | 'technologia';
