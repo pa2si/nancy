@@ -16,7 +16,7 @@ const TechnologiaItems = () => {
           Productos de Technologia
         </h2>
         {/* kitchen image */}
-        <div className="relative h-[140px] w-[120px] md:h-[160px] md:w-[140px]">
+        <div className="relative h-[140px] w-[130px] md:h-[160px] md:w-[140px]">
           <Image
             src="/data-process-monochromatic.svg"
             alt="kitchen illustration"

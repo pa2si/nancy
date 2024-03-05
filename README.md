@@ -1,9 +1,9 @@
-v 0.1.8
+v 0.1.9
 
 What's new:
 
-- new title for technology
-- removed carousel from components/ui
+- technology image adapted for mobile
+- globals background changed
 
 done:
 
