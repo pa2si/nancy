@@ -13,7 +13,7 @@ const TechnologiaItems = () => {
       {/* CocinaItem */}
       <div className="flex flex-col items-center">
         <h2 className=" font-medium text-4xl sm:text-5xl font-title">
-          Productos de Techno
+          Productos de Technologia
         </h2>
         {/* kitchen image */}
         <div className="relative h-[140px] w-[120px] md:h-[160px] md:w-[140px]">
