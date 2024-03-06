@@ -11,7 +11,7 @@ const CocinaItem: React.FC<CocinaItemProps> = ({ cocinaItem }) => {
 
   return (
     <Link href={singleItemUrl}>
-      <li className="grid grid-cols-2 border border-gray-300 shadow-sm hover:bg-gray-50 transition-all duration-100 ease-in-out">
+      <li className="grid grid-cols-2 bg-neutral-50 bg-opacity-50  border border-gray-300 shadow-sm hover:bg-slate-50 transition-all duration-100 ease-in-out rounded-md">
         {/* image */}
         <div className="relative h-[150px] w-3/4 my-auto">
           <Image

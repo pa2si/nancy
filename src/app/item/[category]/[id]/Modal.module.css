@@ -22,13 +22,14 @@
   display: grid;
   place-items: center;
   position: relative;
+  opacity: 10;
 }
 .modal_show {
   opacity: 1;
   visibility: visible;
   z-index: 10;
   transition-property: opacity;
-  transition-duration: 0.5s;
+  transition-duration: 0.8s;
 }
 .close_modal_btn {
   position: absolute;

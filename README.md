@@ -1,9 +1,8 @@
-v 0.1.9
+v 0.1.10
 
 What's new:
 
-- technology image adapted for mobile
-- globals background changed
+- some color adjustments
 
 done:
 
