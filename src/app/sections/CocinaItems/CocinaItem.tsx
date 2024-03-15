@@ -16,7 +16,7 @@ const CocinaItem: React.FC<CocinaItemProps> = ({ cocinaItem }) => {
         <div className="relative h-[150px] w-3/4 my-auto">
           <Image
             src={cocinaItem.imageUrl}
-            alt={cocinaItem.alt}
+            alt={`foto de ${cocinaItem.title}`}
             sizes="20vw"
             fill
             className="absolute object-contain p-2"

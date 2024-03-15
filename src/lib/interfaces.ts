@@ -4,7 +4,6 @@ export interface Item {
   imageUrl: string;
   imageUrl2: string;
   title: string;
-  alt: string;
   estado: string;
   price: string;
   descriptionShort: string;

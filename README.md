@@ -1,8 +1,10 @@
-v 0.1.10
+v 0.1.11
 
 What's new:
 
-- some color adjustments
+- more items added to lists.
+- added a CombinedContext Provider
+- only show 4 items and implemented a more button
 
 done:
 

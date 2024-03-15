@@ -18,7 +18,7 @@ const TechnologiaItem: React.FC<TechnologiaItemProps> = ({
         <div className="relative h-[150px] w-3/4 my-auto">
           <Image
             src={technologiaItem.imageUrl}
-            alt={technologiaItem.alt}
+            alt={`foto de ${technologiaItem.title}`}
             sizes="20vw"
             fill
             className="absolute object-contain p-2"

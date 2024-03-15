@@ -14,10 +14,10 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
-import { useScrollContext } from '@/lib/ScrollContext';
+import { useCombinedContext } from '@/lib/Context';
 
 const MenuMobile: React.FC = () => {
-  const { isHeroVisible } = useScrollContext();
+  const { isHeroVisible } = useCombinedContext();
   const [showMenu, setShowMenu] = useState<boolean>(true);
   const heroRef = useRef<null | HTMLElement>(null);
 

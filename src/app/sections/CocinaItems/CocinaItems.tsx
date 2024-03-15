@@ -1,8 +1,17 @@
+'use client';
+
+import Image from 'next/image';
 import CocinaItem from './CocinaItem';
 import { cocinaItemsList } from '@/lib/itemsList';
-import Image from 'next/image';
+import ShowMoreButton from '@/components/ShowMoreButton';
+import { useCombinedContext } from '@/lib/Context';
 
 const CocinaItems = () => {
+  const { itemsToShow } = useCombinedContext();
+
+  // Filter to only include items with a non-empty id
+  const validItems = cocinaItemsList.filter((item) => item.id !== '');
+
   return (
     <section
       id="cocina"
@@ -13,7 +22,7 @@ const CocinaItems = () => {
         <h2 className=" font-medium text-4xl sm:text-5xl font-title">
           Productos de Cocina
         </h2>
-        {/* kitchen image */}
+        {/* cocina image */}
         <div className="relative h-[130px] md:h-[160px] w-[220px]">
           <Image
             src="/chef-isometric.svg"
@@ -28,17 +37,18 @@ const CocinaItems = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
         </div>
       </div>
-      {cocinaItemsList.length > 0 ? (
-        <ul>
-          {cocinaItemsList.map((item) => (
-            <CocinaItem key={item.id} cocinaItem={item} />
-          ))}
-        </ul>
+      {validItems.length > 0 ? (
+        <>
+          <ul>
+            {validItems.slice(0, itemsToShow).map((item) => (
+              <CocinaItem key={item.id} cocinaItem={item} />
+            ))}
+          </ul>
+          <ShowMoreButton totalItems={validItems.length} />
+        </>
       ) : (
         <div className="text-center py-4">
-          <p className="px-6 sm:px-0">
-            No hay productos de cocina disponibles en este momento.
-          </p>
+          <p>No hay productos de cocina disponibles en este momento.</p>
         </div>
       )}
     </section>

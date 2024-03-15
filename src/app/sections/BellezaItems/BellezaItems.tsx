@@ -1,8 +1,15 @@
+'use client';
+
+import Image from 'next/image';
 import BellezaItem from './BellezaItem';
 import { bellezaItemsList } from '@/lib/itemsList';
-import Image from 'next/image';
+import ShowMoreButton from '@/components/ShowMoreButton';
+import { useCombinedContext } from '@/lib/Context';
 
 const BellezaItems = () => {
+  const { itemsToShow } = useCombinedContext();
+
+  // Filter to only include items with a non-empty id
   const validItems = bellezaItemsList.filter((item) => item.id !== '');
 
   return (
@@ -31,16 +38,17 @@ const BellezaItems = () => {
         </div>
       </div>
       {validItems.length > 0 ? (
-        <ul>
-          {validItems.map((item) => (
-            <BellezaItem key={item.id} bellezaItem={item} />
-          ))}
-        </ul>
+        <>
+          <ul>
+            {validItems.slice(0, itemsToShow).map((item) => (
+              <BellezaItem key={item.id} bellezaItem={item} />
+            ))}
+          </ul>
+          <ShowMoreButton totalItems={validItems.length} />
+        </>
       ) : (
         <div className="text-center py-4">
-          <p className="px-6 sm:px-0">
-            No hay productos de belleza disponibles en este momento.
-          </p>
+          <p>No hay productos de cocina disponibles en este momento.</p>
         </div>
       )}
     </section>

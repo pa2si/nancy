@@ -1,4 +1,4 @@
-import { ScrollProvider } from '@/lib/ScrollContext';
+import { CombinedProvider } from '@/lib/Context';
 import Hero from './sections/Hero';
 import CocinaItems from './sections/CocinaItems/CocinaItems';
 import BellezaItems from './sections/BellezaItems/BellezaItems';
@@ -10,7 +10,7 @@ import TechnologiaItems from './sections/TechnologiaItems/TechnologiaItems';
 
 export default function Home() {
   return (
-    <ScrollProvider>
+    <CombinedProvider initialItems={4} increment={4}>
       <main className="bg-gray-50">
         <Hero />
         <div className="grid md:grid-cols-8 ">
@@ -27,6 +27,6 @@ export default function Home() {
         <MenuMobile />
       </main>
       <Footer />
-    </ScrollProvider>
+    </CombinedProvider>
   );
 }

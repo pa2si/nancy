@@ -11,13 +11,13 @@ const HogarItem: React.FC<HogarItemProps> = ({ hogarItem }) => {
 
   return (
     <Link href={singleItemUrl}>
-      <li className="grid grid-cols-2 border border-gray-300 bg-neutral-50 bg-opacity-50 rounded-md shadow-sm hover:bg-slate-50 transition-all duration-100 ease-in-out">
+      <li className="grid grid-cols-2 bg-neutral-50 bg-opacity-50  border border-gray-300 shadow-sm hover:bg-slate-50 transition-all duration-100 ease-in-out rounded-md">
         {/* image */}
         <div className="relative h-[150px] w-3/4 my-auto">
           <Image
             src={hogarItem.imageUrl}
-            alt={hogarItem.alt}
-            sizes="50vw"
+            alt={`foto de ${hogarItem.title}`}
+            sizes="20vw"
             fill
             className="absolute object-contain p-2"
           />

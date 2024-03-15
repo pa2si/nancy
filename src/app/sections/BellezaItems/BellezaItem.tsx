@@ -16,7 +16,7 @@ const BellezaItem: React.FC<BellezaItemProps> = ({ bellezaItem }) => {
         <div className="relative h-[150px] w-3/4 my-auto ">
           <Image
             src={bellezaItem.imageUrl}
-            alt={bellezaItem.alt}
+            alt={`foto de ${bellezaItem.title}`}
             sizes="20vw"
             fill
             className="absolute object-contain p-2"

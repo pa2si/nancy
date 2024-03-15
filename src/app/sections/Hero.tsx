@@ -3,10 +3,10 @@
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useScrollContext } from '@/lib/ScrollContext';
+import { useCombinedContext } from '@/lib/Context';
 
 const Hero: React.FC = () => {
-  const { setHeroVisibility } = useScrollContext();
+  const { setHeroVisibility } = useCombinedContext();
   const heroRef = useRef<HTMLDivElement | null>(null); // Specify the type for useRef for better type checking
 
   useEffect(() => {
