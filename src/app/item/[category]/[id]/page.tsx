@@ -26,7 +26,12 @@ interface ItemDetailPageProps {
 }
 
 // export async function generateStaticParams() {
-//   const allItems = [...cocinaItemsList, ...bellezaItemsList];
+//   const allItems = [
+//     ...cocinaItemsList,
+//     ...bellezaItemsList,
+//     ...hogarItemsList,
+//     ...technologiaItemsList,
+//   ];
 //   return allItems.map((item) => ({
 //     category: item.category,
 //     id: item.id,
@@ -92,7 +97,7 @@ export default function ItemDetailPage({ params }: ItemDetailPageProps) {
             >
               <Image
                 src={currentImage}
-                alt={item.alt}
+                alt={`foto of ${item.title}`}
                 sizes="(max-width: 768px) 75vw, 33vw"
                 fill
                 className="absolute object-contain"

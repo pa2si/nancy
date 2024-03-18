@@ -15,7 +15,7 @@ const BellezaItems = () => {
   return (
     <section
       id="belleza"
-      className="scroll-mt-24 pt-6 background shadow-xl rounded-lg mt-5 md:mr-4"
+      className="scroll-mt-24 pt-6 background shadow-xl rounded-lg md:mr-4"
     >
       {/* CocinaItem */}
       <div className="flex flex-col items-center ">
